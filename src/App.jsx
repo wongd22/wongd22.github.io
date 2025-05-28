@@ -79,17 +79,13 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
+   <BrowserRouter basename="/">
       <div className="min-h-screen bg-black text-white">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/place" element={<Place />} />
-          <Route path="/shopping" element={<Shopping />} />
-          <Route path="/mypage" element={<MyPage />} />
         </Routes>
       </div>
-    </Router>
-  );
+     </BrowserRouter>
 }
 
 export default App;
