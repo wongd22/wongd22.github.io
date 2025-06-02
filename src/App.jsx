@@ -83,10 +83,10 @@ function App() {
       <div className="min-h-screen bg-black text-white">
         <Routes>
           <Route path="/" element={<HomePage />} />
- <Route path="/shopping" element={<Shopping />} />
+          <Route path="/shopping" element={<Shopping />} />
         </Routes>
       </div>
      </BrowserRouter>
-}
+)}
 
 export default App;
