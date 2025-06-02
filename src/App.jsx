@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Place from './pages/Place';
 import Shopping from './pages/Shopping';
@@ -79,14 +79,14 @@ function HomePage() {
 
 function App() {
   return (
-   <BrowserRouter basename="/">
+   <Router basename="/">
       <div className="min-h-screen bg-black text-white">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/shopping" element={<Shopping />} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/shopping" element={<Shopping/>} />
         </Routes>
       </div>
-     </BrowserRouter>
+     </Router>
 )}
 
 export default App;
